@@ -7,6 +7,7 @@
 [![Dependencies](https://david-dm.org/yashha/wp-nuxt/status.svg?style=flat-square)](https://david-dm.org/yashha/wp-nuxt)
 [![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fyashha%2Fwp-nuxt.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fyashha%2Fwp-nuxt?ref=badge_shield)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4bb695b5-6b46-4c3f-a866-33aaf727570a/deploy-status)](https://app.netlify.com/sites/wp-nuxt/deploys)
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
@@ -31,11 +32,13 @@ The size of the library is 49,8 kB minified (14 kB gzipped). [![npm bundle size]
     // With options
     ['wp-nuxt', {
       endpoint: 'https://wp.kmr.io/wp-json'
+      extensions: true // For additional functions of wpapi-extensions
       /* other options of WP-API */
     }],
  ]
 }
 ```
+Info: when you pass `extensions: true` you will have additional functions of [wpapi-extensions](https://github.com/yashha/wpapi-extensions) available. For this you also have to install [WUXT Headless WordPress API Extensions](https://wordpress.org/plugins/wuxt-headless-wp-api-extensions/) on your wordpress sever.
 
 ## Usage
 
